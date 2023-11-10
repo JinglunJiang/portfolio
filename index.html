@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Jinglun (Noella) Jiang</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Jinglun (Noella) Jiang</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile_pic.jpg" alt="Noella profile Picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Noella Jiang</h1>
+      <p class="section__text_p2">Master of Science student in Computer Science @<a class="custom-link" href="https://www.uchicago.edu/" target="_blank">UChicago</a></p>
+      <p class="section__text_p2">Part-time Full-stack developer @<a class="custom-link" href="https://voices.uchicago.edu/memorylab/" target="_blank">Memory Research Lab</a></p>
+      <div class="btn-container">
+        <button 
+          class="btn btn-color-2" 
+          onClick="window.open('./assets/Jinglun-Jiang-resume.pdf')"
+        >
+          Download CV
+        </button>
+        <button 
+          class="btn btn-color-1" 
+          onClick="location.href='./#contact'"
+        >
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" 
+          alt="My Linkedin profile"
+          class="icon" 
+          onClick="location.href='https://www.linkedin.com/in/jinglun-jiang-b77705224/'"
+        />
+        <img src="./assets/github.png" 
+          alt="My Github profile"
+          class="icon" 
+          onClick="location.href='https://github.com/JinglunJiang'"
+        />
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
