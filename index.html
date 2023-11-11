@@ -6,10 +6,16 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
+  <script src="https://kit.fontawesome.com/fba86bfafd.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav id="desktop-nav">
     <div class="logo">Jinglun (Noella) Jiang</div>
+    <div class="floating-sidebar">
+          <i class="fa-solid fa-heart-pulse fa" onclick="incrementLikes()"></i>
+      <span class="like-count">Like</span>
+      <span id="like-count">0</span>
+    </div>
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>

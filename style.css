@@ -272,6 +272,34 @@ section {
   gap: 1rem;
 }
 
+
+.floating-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #f1f1f1; 
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-solid {
+  padding: 6px 6px; 
+  transition: background-color 300ms ease;
+}
+
+.fa-solid:hover {
+  color: #c0392b;
+}
+
+#like-count {
+  font-size: 16px; 
+  color: #555; 
+}
+
 /* ABOUT SECTION */
 
 #about {
